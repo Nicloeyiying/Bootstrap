@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>demo04</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script language="JavaScript" src="js/bootstrap.min.js"></script>
+		<script language="JavaScript">
+			
+		</script>
+	</head>
+	<body>			
+		<div class="container">
+			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#show">折叠</button>
+			<div class="collapse panel-collapse in" id="show">
+				<div class="well">
+					显示的内容
+				</div>
+			</div>
+			<hr />
+			<div class="panel-group">
+				<!--一个栏目-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a href="#" data-toggle="collapse" data-target="#show1">栏目管理1</a></h4>
+					</div>
+					<div class="panel-body collapse panel-collapse" id="show1">
+						<ul>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--一个栏目-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#" data-toggle="collapse" data-target="#show2">
+								栏目管理2
+							</a>							
+						</h4>
+					</div>
+					<div class="panel-body collapse panel-collapse" id="show2">
+						<ul>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--一个栏目-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#" data-toggle="collapse" data-target="#show3">
+								栏目管理3
+							</a>							
+						</h4>
+					</div>
+					<div class="panel-body collapse panel-collapse in" id="show3">
+						<ul>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="panel-group" id="panel1">
+				<!--一个栏目-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a href="#" class="panel-title" data-toggle="collapse" data-target="#show4" data-parent="#panel1">
+							栏目管理1
+						</a>
+					</div>
+					<div class="panel-body collapse panel-collapse" id="show4">
+						<ul>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--一个栏目-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a href="#" class="panel-title" data-toggle="collapse" data-target="#show5">
+							栏目管理1
+						</a>
+					</div>
+					<div class="panel-body collapse panel-collapse" id="show5">
+						<ul>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--一个栏目-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a href="#" class="panel-title" data-toggle="collapse" data-target="#show6">
+							栏目管理1
+						</a>
+					</div>
+					<div class="panel-body collapse panel-collapse in" id="show6">
+						<ul>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+							<li><a href="#">增加栏目</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

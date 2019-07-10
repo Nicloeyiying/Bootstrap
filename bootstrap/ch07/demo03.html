@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo02</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script language="JavaScript" src="js/bootstrap.min.js"></script>
+		<script language="JavaScript">
+			$(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+				$('[data-toggle="tooltip"]').on('show.bs.tooltip',function(){
+					$('#show').css("background",'#5bc0de');
+				});
+				$('[data-trigger="click"]').click('show.bs.tooltip',function(){
+					$('#show').css("background",'#5cb85c');
+				});
+			});
+		</script>
+		<style>
+			body{
+				padding: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<button type="button" class="btn btn-success" title="向下显示" data-toggle="tooltip" data-placement="bottom" data-trigger="click">向下</button>
+			<button type="button" class="btn btn-info" title="向右显示" data-toggle="tooltip" data-placement="right">向右</button>
+			<br />
+			<div style="width: 100px; height: 100px; background: #1B6D85; margin-top: 50px;" id="show"></div>
+		</div>
+	</body>
+</html>

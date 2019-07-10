@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Index</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script language="JavaScript" src="js/bootstrap.min.js"></script>
+		<script language="JavaScript">
+			$(function(){
+				/*$(".nav a").click(function(e){
+					e.preventDefault();
+					$(this).tab('show');
+				});*/
+				$("#show").click(function(){
+					$("#conventional").tab("show");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<!--选项卡-->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#pane1" data-toggle="tab">搜索</a></li>
+				<li><a href="#pane2" data-toggle="tab">常规</a></li>
+				<li><a href="#pane3" data-toggle="tab">查看</a></li>
+			</ul>
+			<!--面板-->
+			<div class="tab-content">
+				<div class="tab-pane active" id="pane1">
+					<p>搜索 搜索</p>
+				</div>
+				<div class="tab-pane" id="pane2">
+					<p>常规 常规</p>
+				</div>
+				<div class="tab-pane" id="pane3">
+					<p>查看 查看</p>
+				</div>
+			</div>			
+		</div>
+		<div class="container">
+			<!--选项卡-->
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#pane4" data-toggle="tab">搜索</a></li>
+				<li><a href="#pane5" data-toggle="tab">常规</a></li>
+				<li><a href="#pane6" data-toggle="tab">查看</a></li>
+			</ul>
+			<!--面板-->
+			<div class="tab-content">
+				<div class="tab-pane active" id="pane4">
+					<p>搜索 搜索</p>
+				</div>
+				<div class="tab-pane" id="pane5">
+					<p>常规 常规</p>
+				</div>
+				<div class="tab-pane" id="pane6">
+					<p>查看 查看</p>
+				</div>
+			</div>			
+		</div>
+		<div class="container">
+			<!--选项卡-->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#pane7" data-toggle="tab">搜索</a></li>
+				<li><a href="#pane8" id="conventional" data-toggle="tab">常规</a></li>
+				<li><a href="#pane9" data-toggle="tab">查看</a></li>
+			</ul>
+			<!--面板-->
+			<div class="tab-content">
+				<div class="tab-pane active" id="pane7">
+					<p>搜索 搜索</p>
+				</div>
+				<div class="tab-pane" id="pane8">
+					<p>常规 常规</p>
+				</div>
+				<div class="tab-pane" id="pane9">
+					<p>查看 查看</p>
+				</div>
+			</div>
+			<button type="button" id="show">显示常规</button>
+		</div>
+	</body>
+</html>

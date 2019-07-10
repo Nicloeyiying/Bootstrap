@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>demo07</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script language="JavaScript" src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<!--轮播图1-->
+				<div class="col-md-6">
+					<div class="carousel slide" id="carousel_container" data-ride="carousel">
+						<!--图片容器-->
+						<div class="carousel-inner">
+							<div class="item">
+								<img src="img/pic_01.jpg" />
+							</div>
+							<div class="item active">
+								<img src="img/pic_02.jpg" />
+							</div>
+							<div class="item">
+								<img src="img/pic_03.jpg" />
+							</div>
+						</div>
+						<!--圆圈容器-->
+						<ol class="carousel-indicators">
+							<li data-slide-to="0" data-target="#carousel_container"></li>
+							<li data-slide-to="1" data-target="#carousel_container"></li>
+							<li data-slide-to="2" data-target="#carousel_container"></li>
+						</ol>
+						<!--左右按钮容器-->
+						<a href="#carousel_container" class="left carousel-control" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a href="#carousel_container" class="right carousel-control" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+				<!--轮播图2-->
+				<div class="col-md-6">
+					<div class="carousel slide" id="carousel_container1" data-ride="carousel">
+						<!--图片容器-->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/pic_01.jpg" alt="" />
+							</div>
+							<div class="item">
+								<img src="img/pic_02.jpg" alt="" />
+							</div>
+							<div class="item">
+								<img src="img/pic_03.jpg" alt="" />
+							</div>
+						</div>
+						<!--圆圈容器-->
+						<ol class="carousel-indicators">
+							<li data-slide-to="0" data-target="#carousel_container1"></li>
+							<li data-slide-to="1" data-target="#carousel_container1"></li>
+							<li data-slide-to="2" data-target="#carousel_container1"></li>								
+						</ol>
+						<!--左右按钮容器-->
+						<a class="left carousel-control" data-slide="prev" href="#carousel_container1">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" data-slide="next" href="#carousel_container1">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

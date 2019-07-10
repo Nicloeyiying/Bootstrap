@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>demo01</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script language="JavaScript" src="js/bootstrap.min.js"></script>
+		<script language="JavaScript">
+			$(function(){
+				$(".nav a").click(function(e){
+					e.preventDefault();
+					$(this).tab('show');
+					$("#show").html(e.target.innerHTML);
+					/*var newobj=e.target.innerHTML;
+					$("#testshow").html(newobj);*/
+				});
+			});
+		</script>
+	</head>
+	<body>			
+		<div class="container">
+			<!--选项卡-->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#pane7">搜索</a></li>
+				<li><a href="#pane8" id="conventional">常规</a></li>
+				<li><a href="#pane9">查看</a></li>
+			</ul>
+			<!--面板-->
+			<div class="tab-content">
+				<div class="tab-pane active" id="pane7">
+					<p>搜索 搜索</p>
+				</div>
+				<div class="tab-pane" id="pane8">
+					<p>常规 常规</p>
+				</div>
+				<div class="tab-pane" id="pane9">
+					<p>查看 查看</p>
+				</div>
+			</div>
+			<h3 id="show">标志</h3>
+		</div>
+	</body>
+</html>

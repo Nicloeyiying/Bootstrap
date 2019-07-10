@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Demo10</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!--高度尺寸-->
+			<form>
+				<input type="text" class="form-control input-lg" placeholder=".input-lg" />
+				<br />
+				<input type="text" class="form-control" placeholder="Default input" />
+				<br />
+				<input type="text" class="form-control input-sm" placeholder=".input-sm" />
+				<br />
+				<select class="form-control input-lg">
+					<option value="option1">.input-lg</option>
+					<option value="option2">.input-lg</option>
+					<option value="option3">.input-lg</option>
+				</select>
+				<br />
+				<select class="form-control">
+					<option value="option1">Default select</option>
+					<option value="option2">Default select</option>
+					<option value="option3">Default select</option>
+				</select>
+				<br />
+				<select class="form-control input-sm">
+					<option value="option1">.input-sm</option>
+					<option value="option2">.input-sm</option>
+					<option value="option3">.input-sm</option>
+				</select>				
+			</form>
+			<br />
+			<!--水平排列的表单组的尺寸-->
+			<form class="form-horizontal">
+				<div class="form-group form-group-lg">
+					<label for="large" class="control-label col-sm-2">Large label</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="large" placeholder="Large input" />
+					</div>
+				</div>
+				<div class="form-group form-group-sm">
+					<label for="small" class="control-label col-sm-2">Small label</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="small" placeholder="Small input" />
+					</div>
+				</div>
+			</form>
+			<!--调整列（column）尺寸-->
+			<div class="row">
+				<div class="col-xs-2">
+					<input type="text" class="form-control" placeholder=".col-xs-2" />
+				</div>
+				<div class="col-xs-3">
+					<input type="text" class="form-control" placeholder=".col-xs-3" />
+				</div>
+				<div class="col-xs-4">
+					<input type="text" class="form-control" placeholder=".col-xs-4" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
